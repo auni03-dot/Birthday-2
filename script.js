@@ -8,7 +8,7 @@ function selectOption(option) {
         document.getElementById('no-button').innerText = 'You sure?';
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
-        var newSize = parseFloat(currentFontSize) * 2;
+        var newSize = parseFloat(currentFontSize)*2;
         yesButton.style.fontsize = newSize + 'px';  
     } else {
         alert('Invalid option!');
